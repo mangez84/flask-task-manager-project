@@ -29,7 +29,7 @@
                     <li><a href="#">New Task</a></li>
                     <li><a href="#">Manage Categories</a></li>
                     <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Log In</a></li>
+                    <li><a href="{{ url_for('login') }}">Log In</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
                 </ul>
             </div>
@@ -40,13 +40,13 @@
             <li>
                 <h4 class="center-align light-blue-text text-darken-4">Task Manager</h4>
             </li>
-            <li><a href="{{ url_for('register') }}">Home</a></li>
+            <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">New Task</a></li>
             <li><a href="#">Manage Categories</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
     </header>
 
